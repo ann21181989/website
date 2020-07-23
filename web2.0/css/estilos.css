@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    height: 100vh;
+    background-image: url(..//imgweb/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    
+}
+
+.imagen{
+    position: relative;
+    top: 100;
+    bottom: 140px;
+   
+    
+}
+
+.encabezado{
+    height: 700px;
+    width: 700px;
+}
+
+.menu{
+    display: flex;
+    position: relative;
+    bottom: 250px;
+    left: 650px;
+
+    
+    
+}
+
+a{
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 35px;
+    font-family: 'Rowdies', cursive, sans-serif;
+    cursor: pointer;
+}
+
+.titulo{
+    display: block;
+    position: relative;
+    bottom: 450px;
+    margin-left: 40px;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-family: 'Pacifico', cursive, sans-serif;
+    
+}
+
+p{
+     color: rgb(0, 0, 0);
+    font-size: 22px;
+    text-align: center;
+    font-weight: 300;
+}
+
+a:hover{
+    text-decoration: underline;
+    
+}
+
+.subtitulo1{
+    font-family: 'Rowdies', cursive, sans-serif;
+    font-size: 35px;
+    margin-left: 30px;
+    margin-top: 20px;
+    
+    
+}
+
+.isometric{
+    width: 600px;
+    height: 600px;
+    margin-left: 35px;
+    
+}
+
+.contenedor0{
+    position:relative;
+    left: 600px;
+    bottom: 450px;
+
+}
+
+.experts{
+    height: 600px;
+    flex-wrap: wrap;
+}
+
+h3{
+    font-size: 40px;
+    line-height: 30pt;
+    
+    
+    
+}
+
+span{
+    font-size: 40px;
+    color: #ffffff;
+    background-color: #e206b7;
+    border-radius: 20%;
+    margin: 20px;
+    line-height: 60px;
+    
+    
+    
+}
+
+.subtitulo2{
+    font-family: 'Rowdies', cursive, sans-serif;
+    font-size: 35px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.galeria{
+    overflow: hidden;
+    margin: auto;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 10px;
+    padding: 40px 0;
+    
+    
+}
+
+.galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+    flex-wrap: wrap; 
+}
+
+.galeria a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgb(0, 0, 0, .5);
+}
+
+.galeria a:hover img{
+    filter: blur(3px);
+    transform: rotate(10deg) scale(1.3);
+
+}
+
+.ligthbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transform: scale(0);
+    transition: transform .3s ease-in-out;
+
+}
+
+.ligthbox img{
+    width: 75vw;
+    max-height: 70vh;
+
+}
+
+.ligthbox:target{
+    transform: scale(1);
+
+}
+
+.cerrar {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: #474747;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.siguiente{
+    display: block;
+    color: #474747;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    
+    
+
+}
+
+.marca1{
+    float: left;
+    color: #610236;
+    
+}
+
+.contact{
+    position: relative;
+    top: 20px;
+    color: #610236;
+}
+
+
+.socialmedia{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    color: #700174;
+    position: relative;
+    left: 400px; 
+    bottom: 20px; 
+
+}
+
+
+.socialmedia i{
+    font-size: 40px;
+    padding: 20px;
+    
+}
+
+footer{
+    width: 100vw;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+}
+
+.instagram:hover{
+    color: #610236;
+
+}
+
+.whatsap:hover{
+    color: #610236;
+}
+
+@media screen and (max-width: 414px){
+   
+    .encabezado{
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .titulo{
+        margin-top: 30px;
+    }
+
+    a{
+        position: relative;
+        right: 635px;
+        top: 300px;
+        font-size: 17px;
+    }
+
+  
+    .isometric{
+        width: 200px;
+        height: 200px;
+    }
+
+    .contenedor0{
+        margin-top: 30px;
+    }
+
+    .contenedor{
+        position: relative;
+        right: 600px;
+        top: 400px;
+        
+    }
+
+    .contenedor1{
+        position: relative;
+        right: 600px;
+        top: 400px;
+        
+    }
+
+    .contenedor2{
+        position: relative;
+        right: 600px;
+        top: 400px;
+    }
+
+    .contenedor3{
+        position: relative;
+        right: 600px;
+        top: 400px;
+    }
+
+    .experts{
+        height: 550px;
+    }
+
+     h3{
+        font-size: 25px;
+    }
+    span{
+        font-size: 25px;
+    }
+
+
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
